@@ -36,5 +36,18 @@ const CardTitle = styled.div`
   line-height: 23.04px;
   margin: 0 0 12px 0;
 `;
-const CardDescription = styled.p``;
-const CardButton = styled.button``;
+const CardDescription = styled.p`
+  font-size: 13.6px;
+  line-height: 20.4px;
+  margin-bottom: 12px;
+`;
+const CardButton = styled.button`
+  background-color: white;
+  padding: 6px 12px;
+  border: 1px solid black;
+  border-radius: 15px;
+  font-size: 13.6px;
+  font-weight: 700;
+  line-height: 20.4px;
+  color: #6c757d;
+`;
