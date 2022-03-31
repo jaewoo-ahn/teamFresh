@@ -16,6 +16,10 @@ function main() {
           </DescriptionSub>
         </MainDescription>
       </DescriptionWrapper>
+      <TimfWrapper>
+        <TimfTitle>TIMF BUSINESS</TimfTitle>
+        <TitleLine />
+      </TimfWrapper>
     </MainWrapper>
   );
 }
@@ -52,4 +56,24 @@ const DescriptionSub = styled.p`
   margin-block-start: 1em;
   margin-block-end: 1em;
   line-height: 1.5;
+`;
+
+const TimfWrapper = styled.div`
+  justify-content: center;
+  margin-top: 30px;
+`;
+
+const TitleLine = styled.hr`
+  border-top: 2px solid #b4b4b4;
+  width: 75%;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+`;
+
+const TimfTitle = styled.div`
+  padding: 1rem;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  text-align: center;
 `;
