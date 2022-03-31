@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Card from "../components/Card";
 import CaroselSlide from "../components/CaroselSlide";
 
 function main() {
@@ -20,6 +21,12 @@ function main() {
         <TimfTitle>TIMF BUSINESS</TimfTitle>
         <TitleLine />
       </TimfWrapper>
+      <CardContainer>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </CardContainer>
     </MainWrapper>
   );
 }
@@ -27,6 +34,7 @@ function main() {
 export default main;
 
 const MainWrapper = styled.div`
+  width: 100%;
   margin-top: 60px;
 `;
 
@@ -76,4 +84,10 @@ const TimfTitle = styled.div`
   font-weight: 700;
   line-height: 38.4px;
   text-align: center;
+`;
+
+const CardContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
 `;
