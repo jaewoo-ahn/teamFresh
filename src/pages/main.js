@@ -33,6 +33,10 @@ function main() {
         <Announce />
         <Announce />
       </Container>
+      <DividedLine />
+      <ConnectContainer>
+        <ConnectTitle>Connect</ConnectTitle>
+      </ConnectContainer>
     </MainWrapper>
   );
 }
@@ -118,4 +122,18 @@ const Container = styled.div`
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+`;
+
+const ConnectContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+const ConnectTitle = styled.div`
+  margin-top: 20px;
+  margin-bottom: 0.5rem;
+  font-size: 32px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
 `;
