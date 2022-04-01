@@ -111,6 +111,8 @@ const DividedLine = styled.hr`
 
 const Container = styled.div`
   display: flex;
+  align-content: center;
+  justify-content: center;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
