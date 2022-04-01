@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Announce from "../components/Announce";
 import Card from "../components/Card";
 import CaroselSlide from "../components/CaroselSlide";
 
@@ -27,6 +28,11 @@ function main() {
         <Card />
         <Card />
       </CardContainer>
+      <DividedLine />
+      <Container>
+        <Announce />
+        <Announce />
+      </Container>
     </MainWrapper>
   );
 }
@@ -90,4 +96,24 @@ const CardContainer = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 90px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+`;
+
+const DividedLine = styled.hr`
+  width: 97%;
+  margin-top: 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+`;
+
+const Container = styled.div`
+  display: flex;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 `;
